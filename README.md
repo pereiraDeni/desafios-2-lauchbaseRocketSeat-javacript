@@ -28,7 +28,7 @@
 
 ## :rocket: Desafios
 
-- [Primeiros passos com JavaScript](Desafios/01-primeirosPassosComJs.js)
+- [Primeiros passos com JavaScript](desafios/Desafio2-1-primeiro-html/index.html)
 - [Lidando com objetos e vetores](desafios/02-lidandoComObjetosEvetores.js)
 - [Funções e estruturas de repetição](desafios/03-funcoesEestruturasDeRepeticao.js)
 - [Aplicação: Operações bancárias](04-aplicacaoOperacoesBancariais.js)
