@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    padding: 30px;
+    background-color: #5E3939;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.links a {
+    padding: 30px;
+    color: #EC834D;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #EBEBEB;
+    transition: 500ms;
+}
