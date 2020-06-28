@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    padding: 30px;
     background-color: white;
     border-bottom: solid 5px darkslateblue;
     height: 80px;
@@ -50,6 +51,7 @@ header {
 
 .menu li {
     display: inline-block;
+    padding-left: 30px;
 }
 
 header a {
@@ -85,20 +87,20 @@ header a {
     color: white;
 }
 
-@media(max-width: 850px) {
+@media(max-width: 1000px) {
     .menu {
         display: none;
     }
 }
 
-@media(min-width: 1051px) {
+@media(min-width: 1219px) {
     .menu-toggle {
         display: none;
     }
 }
 
 
-@media(max-width: 1050px) {
+@media(max-width: 1220px) {
     .autenticacao {
         display: none;
     }
