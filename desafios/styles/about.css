@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: 'Sintony', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(113,89,193);
 }
 
