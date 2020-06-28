@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(98, 78, 165);
+    font-family: 'Sintony', sans-serif;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.cornner {
+    background-color: white;
+    width: 325px;
+}
+
+header img {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+header span {
+    transform:  scale(2);
+    padding-left: 6px;
+    padding-bottom: 12px;
+}
+
+.links {
+    background-color:rgb(113, 89, 193);
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;    
+}
+
+.links a:hover {
+    font-size: 23px;
+    transition: 400ms;
+    align-self: auto;
+}
