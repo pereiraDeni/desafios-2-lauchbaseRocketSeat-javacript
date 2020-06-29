@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+:root { /* cria uma variável*/
+    --collor-green: #50fa7b; /*o que é utilizado várias vezes pode ser feito dessa maneira*/
+    --collor-cards: #7159c1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0, alpha);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a { /*pega tudo que estiver na class links e no links dentro de a*/
+color: white;
+font-size: 18px;
+line-height: 28px;
+margin: 0 16px;
+text-decoration: none;
+}
+
+.links a:hover {
+color: var(--collor-green);
+transition: 700ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding-top: 32px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border: 2px solid var(--collor-green);
+    margin-bottom: 32px;
+    height: 260px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px; /* aqui como eu limitei o texto para ter no máximo uma largura de 500px, e caso chegue ele mudará de linha, ele sai do alinhamento. Poruq eo margin e o padding não dão conta de alinhar*/
+    margin: 32px auto; /*não modifica top e botton em 32 e deixa left e right para se auto preencher e alinhar no centro */
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#wrapper p a {
+    color: var(--collor-green);
+}
+
+#links-footer a{
+    border-bottom: 1px solid var(--collor-green);
+}
+
+/* == CARDS == */
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /*da um espaço entre os elemento do grid, só pode colocar com o grid*/
+}
+
+.card {
+    background-color: var(--collor-cards);
+}
+
+.card_image_container img {
+    width: 100%; /*respeita o limite do pai dele -- muito interessante -- fica 100% a qualquer um superior a ele*/
+}
+
+.card_content,
+.card_info {
+    padding: 24px;
+}
+
+.card_info {
+    display: grid;/*cria tabelas ou frames*/
+    grid-template-columns: 1fr 1fr; /*diz como sera a tabela, duas colunas/frames*/
+}
+.card_price {
+    background-color: var(--collor-cards);
+    filter: brightness(90%); /*atribubi várias aparecencias*/
+    padding: 5px 20px ;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* == Modal == */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%; /*100% da página*/
+    height: 100%; /*100% da página*/
+    position: fixed; /*posição fixa*/
+    top: 0; /*fixa no top 0, ele começa no top 0*/
+    opacity: 0;
+    visibility: hidden; /*mesmo com opacidade, ele continua na página transparente mas la - para sanar isso precisa sumir com ele*/
+    ;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto; /*visão da altura viewnheight -- recursivo*/
+    position: relative; /*fica uma posição relativa, muda o eixo de cordenada dentro da caixa*/
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute; /*permite posicionar em qualquer parte da tala*/
+    right: 8px; /*deixa ele apenas na direita*/
+    top: 8px;
+    cursor: pointer;
+}
+
+/* == Modal ACTIVE== */
+
+.modal-overlay.active { /*toda vez que adicionar acvtive ao lado do modal-overlay ele irá chamar isos no css */
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%
+}
